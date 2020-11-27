@@ -1724,6 +1724,11 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
+"@salesforce-ux/design-system@^2.13.7":
+  version "2.13.7"
+  resolved "https://registry.yarnpkg.com/@salesforce-ux/design-system/-/design-system-2.13.7.tgz#047694b53528a1b06c44fd0091e87f6c032bbffb"
+  integrity sha512-eSXYJmJbroOCnqRVzGDb0HoiB2J42lViLPqtHxH4O8L4k7/PkdW3bUiodAKKcEiRvmuD9YojBHrLVtK6eX7MjQ==
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.1.tgz#a21117b19ee9be70c379ec1877537ef2e1c63301"

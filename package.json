@@ -43,6 +43,7 @@
     "@angular/platform-browser-dynamic": "^11.0.0-next.6",
     "@angular/router": "^11.0.0-next.6",
     "@nrwl/angular": "10.4.4",
+    "@salesforce-ux/design-system": "^2.13.7",
     "ngx-build-plus": "^10.1.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
