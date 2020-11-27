@@ -24,10 +24,26 @@
             "aot": true,
             "assets": [
               "apps/shell/src/favicon.ico",
-              "apps/shell/src/assets"
+              "apps/shell/src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/@salesforce-ux/design-system/assets/fonts/",
+                "output": "/assets/fonts/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@salesforce-ux/design-system/assets/icons/",
+                "output": "/assets/icons/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@salesforce-ux/design-system/assets/images/",
+                "output": "/assets/images/"
+              }
             ],
             "styles": [
-              "apps/shell/src/styles.scss"
+              "apps/shell/src/styles.scss",
+              "node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css"
             ],
             "scripts": [],
             "extraWebpackConfig": "apps/shell/webpack.config.js"
