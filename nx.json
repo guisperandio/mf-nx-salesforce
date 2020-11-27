@@ -24,7 +24,10 @@
   },
   "projects": {
     "shell": {
-      "tags": []
+      "tags": ["domain:shell"]
+    },
+    "lightning-components": {
+      "tags": ["lib:lightning-components"]
     }
   }
 }

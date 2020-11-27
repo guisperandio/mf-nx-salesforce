@@ -12,7 +12,18 @@
             "enforceBuildableLibDependency": true,
             "allow": [],
             "depConstraints": [
-              { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }
+              { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] },
+              {
+                "sourceTag": "lib:lightning-components",
+                "onlyDependOnLibsWithTags": ["lib:lightning-components"]
+              },
+              {
+                "sourceTag": "domain:shell",
+                "onlyDependOnLibsWithTags": [
+                  "domain:shell",
+                  "lib:lightning-components"
+                ]
+              }
             ]
           }
         ]

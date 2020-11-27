@@ -102,9 +102,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/shell/src/**/*.ts"
-            ]
+            "lintFilePatterns": ["apps/shell/src/**/*.ts"]
           }
         },
         "test": {
@@ -114,6 +112,32 @@
             "passWithNoTests": true,
             "extraWebpackConfig": "apps/shell/webpack.config.js"
           }
+        }
+      }
+    },
+    "lightning-components": {
+      "projectType": "library",
+      "root": "libs/lightning-components",
+      "sourceRoot": "libs/lightning-components/src",
+      "prefix": "mf-nx-federation",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/lightning-components/src/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/lightning-components/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
         }
       }
     }
