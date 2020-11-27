@@ -1,6 +1,8 @@
-import ModuleFederationPlugin from 'webpack/lib/container/ModuleFederationPlugin';
-import mf from '@angular-architects/module-federation/webpack';
-import path from 'path';
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const mf = require('@angular-architects/module-federation/webpack');
+const path = require('path');
 
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(path.join(__dirname, '../../tsconfig.base.json'), [
@@ -18,10 +20,10 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       // For remotes (please adjust)
-      // name: 'shell',
-      // filename: 'remoteEntry.js',
+      // name: "shell",
+      // filename: "remoteEntry.js",
       // exposes: {
-      //   './Component': './apps/shell/src/app/app.component.ts',
+      //     './Component': './apps/shell/src/app/app.component.ts',
       // },
 
       // For hosts (please adjust)
