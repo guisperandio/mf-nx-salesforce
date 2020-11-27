@@ -24,22 +24,7 @@
             "aot": true,
             "assets": [
               "apps/shell/src/favicon.ico",
-              "apps/shell/src/assets",
-              {
-                "glob": "**/*",
-                "input": "node_modules/@salesforce-ux/design-system/assets/fonts/",
-                "output": "/assets/fonts/"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/@salesforce-ux/design-system/assets/icons/",
-                "output": "/assets/icons/"
-              },
-              {
-                "glob": "**/*",
-                "input": "node_modules/@salesforce-ux/design-system/assets/images/",
-                "output": "/assets/images/"
-              }
+              "apps/shell/src/assets"
             ],
             "styles": [
               "apps/shell/src/styles.scss",
