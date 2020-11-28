@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { APP_ROUTES } from './app.routes';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
+import { SidemenuComponent } from './sidemenu/sidemenu.component';
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, HeaderComponent],
+  declarations: [AppComponent, DashboardComponent, HeaderComponent, SidemenuComponent],
   imports: [ButtonModule, BrowserModule, RouterModule.forRoot(APP_ROUTES)],
   providers: [],
   bootstrap: [AppComponent],
