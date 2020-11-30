@@ -1,5 +1,11 @@
-<mf-nx-federation-header></mf-nx-federation-header>
-<mf-nx-federation-sidemenu></mf-nx-federation-sidemenu>
-<main>
-  <router-outlet></router-outlet>
-</main>
+<div class="slds-grid slds-wrap">
+  <div class="slds-col slds-size_1-of-1">
+    <mf-nx-federation-header></mf-nx-federation-header>
+  </div>
+  <nav class="slds-col slds-size_2-of-12">
+    <mf-nx-federation-sidemenu></mf-nx-federation-sidemenu>
+  </nav>
+  <main class="slds-col slds-size_10-of-12">
+    <router-outlet></router-outlet>
+  </main>
+</div>
