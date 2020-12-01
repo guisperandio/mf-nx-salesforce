@@ -28,6 +28,13 @@
     },
     "lightning-components": {
       "tags": ["lib:lightning-components"]
+    },
+    "dashboard": {
+      "tags": ["domain:dashboard"]
+    },
+    "dashboard-e2e": {
+      "tags": [],
+      "implicitDependencies": ["dashboard"]
     }
   }
 }
